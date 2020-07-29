@@ -1,0 +1,15 @@
+#Input: list1 = [12, -7, 5, 64, -14]
+#Output: 12, 5, 64
+#Input: list2 = [12, 14, -95, 3]
+#Output: [12, 14, 3]
+
+list1=[12, -7, 5, 64, -14]
+print("list1 =" , list1)
+for num in list1:
+  if num > 0:
+    print(num,end= " ")
+    
+list2= [12, 14, -95, 3]
+list2_new = list(filter(lambda x: x >0, list2))
+print("\nlist2 =" ,list2)
+print(list2_new)
